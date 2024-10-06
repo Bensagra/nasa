@@ -9,7 +9,7 @@ let plot = document.getElementById('plot');
 plot.src = `./images/${data}.png`;
 
 console.log(plot.src);
-for (let i = 0; i <= 75; i++) {
+for (let i = 0; i <= 63; i++) {
     let div = document.createElement('li');
     div.addEventListener('click', () => {
         sessionStorage.setItem('item', i);
