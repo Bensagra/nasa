@@ -1,0 +1,141 @@
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    background-color: black;
+}
+
+.container {
+    display: flex;
+    flex-direction: row; /* Disposición horizontal */
+    height: 100vh; /* Altura completa de la ventana */
+}
+
+.topBar {
+    background-color: black;
+    color: black;
+    height: 10vh;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.topBar img {
+    height: 80%;
+    padding: 0.1vw;
+    margin-right: 1vw;
+    cursor: pointer;
+}
+
+.hamburger {
+    background: none;
+    border: none;
+    color: white;
+    font-size: 1.5rem;
+    cursor: pointer;
+    display: none; /* Ocultar por defecto */
+}
+
+.sidebar {
+    background-color: #333;
+    color: #fff;
+    font-size: 0.8vw;
+    width: 15vw;
+    height: 90vh;
+    padding-left: 0.5vw;
+    overflow-y: auto; /* Habilita el desplazamiento vertical */
+    overflow-x: hidden; /* Deshabilita el desplazamiento horizontal */
+    scrollbar-width: thin;
+    scrollbar-color: #fff #333;
+    display: block; /* Mostrar barra lateral por defecto */
+}
+
+.sidebar ul {
+    list-style-type: none;
+    width: 100%;
+}
+
+.sidebar ul li {
+    margin: 0.75vw 0;
+    padding: 10px;
+}
+
+.sidebar ul li:hover {
+    background-color: black;
+    transition: 0.3s;
+    transform: scale(1.1);
+    cursor: pointer;
+}
+
+.content {
+    padding: 20px;
+    flex-grow: 1;
+}
+
+h1, h2 {
+    margin-bottom: 20px;
+}
+
+section {
+    margin-bottom: 40px;
+    padding: 20px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+/* Media Queries para responsive design */
+@media (max-width: 768px) {
+    .container {
+        flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+    }
+
+    .sidebar {
+        width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+        height: auto; /* Ajusta la altura */
+        display: none; /* Ocultar la barra lateral en pantallas pequeñas */
+    }
+
+    .hamburger {
+        display: block; /* Mostrar botón de hamburguesa en pantallas pequeñas */
+    }
+
+    .content {
+        padding: 10px; /* Reduce el padding */
+    }
+
+    .topBar img {
+        height: 50%; /* Reduce el tamaño de las imágenes en la barra superior */
+    }
+
+    .sidebar h2 {
+        font-size: 2vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .sidebar ul li {
+        font-size: 1.5vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    }
+}
+
+@media (max-width: 480px) {
+    .sidebar {
+        font-size: 2vw; /* Aumenta el tamaño de la fuente en pantallas muy pequeñas */
+    }
+
+    .topBar img {
+        height: 40%; /* Ajusta aún más el tamaño de las imágenes */
+    }
+
+    h1, h2 {
+        font-size: 4vw; /* Aumenta el tamaño de los encabezados en pantallas pequeñas */
+    }
+
+    section {
+        padding: 15px; /* Reduce el padding de las secciones */
+    }
+}
