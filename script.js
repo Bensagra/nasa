@@ -7,7 +7,7 @@ for (let i = 0; i <= 63; i++) {
         sessionStorage.setItem('item', i);
         location.href = './plots.html';
     });
-    div.innerText = 'Item ' + i;
+    div.innerText = 'Plot ' + i;
     sidebar.appendChild(div);    
 }
 
