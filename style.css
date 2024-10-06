@@ -148,4 +148,11 @@ section {
     section {
         padding: 15px; /* Reduce el padding de las secciones */
     }
+    .sidebar h2 {
+        font-size: 4vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    }
+
+    .sidebar ul li {
+        font-size: 3vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+    }
 }
