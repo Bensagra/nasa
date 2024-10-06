@@ -58,16 +58,19 @@ body {
 .sidebar ul {
     list-style-type: none;
     width: 100%;
+    padding: 0; /* Eliminar el padding */
+    margin: 0; /* Eliminar el margin */
 }
 
 .sidebar ul li {
     margin: 0.75vw 0;
-    padding: 10px;
+    padding: 15px 10px; /* Aumentar el padding para facilitar el toque */
+    border-bottom: 1px solid #444; /* Línea inferior para separar elementos */
 }
 
 .sidebar ul li:hover {
-    background-color: black;
-    transition: 0.3s;
+    background-color: #444; /* Cambiar color al pasar el mouse */
+    transition: background-color 0.3s; /* Suavizar la transición */
     transform: scale(1.1);
     cursor: pointer;
 }
@@ -121,11 +124,11 @@ section {
     }
 
     .sidebar h2 {
-        font-size: 2vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 4vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
     }
 
     .sidebar ul li {
-        font-size: 1.5vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
+        font-size: 3vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
     }
 }
 
@@ -146,4 +149,3 @@ section {
         padding: 15px; /* Reduce el padding de las secciones */
     }
 }
-    
