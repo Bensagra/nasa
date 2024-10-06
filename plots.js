@@ -6,7 +6,8 @@ topBar.addEventListener('click', () => {
     location.href = './index.html';
 });
 let plot = document.getElementById('plot');
-plot.src = `./seismic_plots/event_${data}.png`;
+plot.src = `./images/${data}.png`;
+
 console.log(plot.src);
 for (let i = 0; i <= 75; i++) {
     let div = document.createElement('li');
