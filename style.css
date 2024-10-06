@@ -54,13 +54,7 @@ body {
     scrollbar-color: #fff #333;
     display: block; /* Mostrar barra lateral por defecto */
 }
-#image-section{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    flex-direction: column;
-    margin-top: 1vw;
-}
+
 
 .sidebar ul {
     list-style-type: none;
