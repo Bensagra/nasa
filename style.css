@@ -21,7 +21,7 @@ body {
     height: 10vh;
     width: 100%;
     display: flex;
-    justify-content: space-around;
+    justify-content: space-between;
     align-items: center;
 }
 
@@ -109,6 +109,13 @@ section {
         padding: 10px; /* Reduce el padding */
     }
 
+    .todo {
+        display: flex;
+        justify-content: space-around;
+        align-self: center;
+        margin: 1vw;
+    }
+
     .topBar img {
         height: 50%; /* Reduce el tamaño de las imágenes en la barra superior */
     }
@@ -139,3 +146,4 @@ section {
         padding: 15px; /* Reduce el padding de las secciones */
     }
 }
+    
