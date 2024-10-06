@@ -97,11 +97,12 @@ section {
 @media (max-width: 768px) {
     .container {
         flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
+        height: auto; /* Altura automática */
     }
 
     .sidebar {
         width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
-        height: auto; /* Ajusta la altura */
+        height: 40vh; /* Ajusta la altura */
         display: none; /* Ocultar la barra lateral en pantallas pequeñas */
     }
 
