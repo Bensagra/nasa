@@ -11,7 +11,7 @@ body {
 
 .container {
     display: flex;
-    width: 95vw;
+    width: 85vw;
     flex-direction: row; /* Disposición horizontal */
     height: 100vh; /* Altura completa de la ventana */
 }
