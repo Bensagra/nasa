@@ -11,6 +11,7 @@ body {
 
 .container {
     display: flex;
+    width: 95vw;
     flex-direction: row; /* Disposición horizontal */
     height: 100vh; /* Altura completa de la ventana */
 }
@@ -55,7 +56,6 @@ body {
     display: block; /* Mostrar barra lateral por defecto */
 }
 
-
 .sidebar ul {
     list-style-type: none;
     width: 100%;
@@ -77,8 +77,9 @@ body {
 }
 
 .content {
+    flex-grow: 1; /* Permite que el contenido ocupe el espacio restante */
     padding: 20px;
-    flex-grow: 1;
+    width: 15vw;
 }
 
 h1, h2 {
@@ -95,13 +96,19 @@ section {
 
 /* Media Queries para responsive design */
 @media (max-width: 768px) {
+    .home{
+        width: 90vw;
+        margin-left: 2.5vw;
+    }
     .container {
+        width: 100vw;
+        
         flex-direction: column; /* Cambia a disposición vertical en pantallas pequeñas */
         height: auto; /* Altura automática */
     }
 
     .sidebar {
-        width: 100%; /* Ocupa el ancho completo en pantallas pequeñas */
+        width: 100vw; /* Ocupa el ancho completo en pantallas pequeñas */
         height: 40vh; /* Ajusta la altura */
         display: none; /* Ocultar la barra lateral en pantallas pequeñas */
     }
@@ -132,6 +139,7 @@ section {
     .sidebar ul li {
         font-size: 3vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
     }
+    
 }
 
 @media (max-width: 480px) {
@@ -149,6 +157,7 @@ section {
 
     section {
         padding: 15px; /* Reduce el padding de las secciones */
+        width: 90vw;
     }
     .sidebar h2 {
         font-size: 4vw; /* Aumenta el tamaño de la fuente para pantallas pequeñas */
@@ -159,21 +168,18 @@ section {
     }
 }
 
-
-.tituloPrincipal{
+.tituloPrincipal {
     color: white;
     font-size: 6vw;
+    width: 100%;
     text-align: center;
     margin-top: 1vw;
 }
 
-.text{
+.text {
     display: block;
     white-space: nowrap;
     color: white;
     border-right: 4px solid white;
     width: 100%;
-
-  
 }
-
